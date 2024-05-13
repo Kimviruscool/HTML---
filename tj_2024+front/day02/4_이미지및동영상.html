@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    
+    <p>
+     상대경로 vs 절대경로
+     1. 상대경로 : 현재 문서(위치) 기준으로 상대적인 경로
+      1. ./ , 생략 : 현재 위치
+      2. ../ : 현재 위치의 상위 위치로 한번 이동
+      3. ../../ : 현재 위치의 상위 위치로 2번 이동
+      4. ../폴뎌명/파일명 : 현재 위치에서 상위 위치로 하나이동후 폴더 이동후 파일불러오기
+
+     2. 절대경로 : 모든 경로
+      1.  
+    </p>
+
+    <h1> 이미지 마크업 1. src(소스) = "사진경로" 속성</h1>
+     <img src="00501111_20190121.jpg"/>
+     <img src="../00501111_20190121.jpg">
+     <img src="../day03/00501111_20190121.jpg"/>    
+
+     <!--절대 경로 1. 서버(자료 제공하는 공유pc)기준 2.로컬(혼자쓰는pc)기준 -->
+     <!--로컬 기준-->
+     <img src="C:\Users\tj-bu-703-008\Desktop\tj_2024+front\day02\00501111_20190121.jpg"/>
+     <!--서버 기준-->
+     <img src="http://192.168.30.28:5500/day02/00501111_20190121.jpg"/>
+
+    <h1> 오디오 마크업 : 1. src="파일경로" 2. controls 3.autoplay(브라우저 정책에 따라 금지) </h1>
+    <audio src="오디오.mp3" controls autoplay> </audio>
+
+    <h1> 비디오 마크업 : </h1>
+    <video src="202587-918431513_tiny.mp4" controls autoplay muted> </video>
+
+    <h1> 외부 멀티미디어 마크업 </h1>
+    <h2> 유튜브 영상 </h2>
+     <iframe width="560" height="315" src="https://www.youtube.com/embed/daBlFsD9VFI?si=O-OQTL0brs4ch5JN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <h2> 구글 지도 </h2>
+     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6331.080255315046!2d126.71889544702049!3d37.49517715055555!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b7c4657c1fbbb%3A0x960379a8e77c411e!2z642U7KGw7J2A7Lu07ZOo7YSw7ZWZ7JuQ!5e0!3m2!1sko!2skr!4v1715136832864!5m2!1sko!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+     
+</body>
+</html>

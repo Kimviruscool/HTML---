@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='4_박스.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    
+    <!--
+        마크업 마다의 구역 형성 
+    -->
+    <h3> 박스/구역 CSS</h3>
+    
+    <p> 문단 구역 </p>
+
+    <h4 class="구역1"> 제목4 구역 </h4>
+
+    <div class="구역2"> 박스 구역 </div>
+    <div class="구역2"> <img src="00501111_20190121.jpg"> </div>
+
+    <div class="구역3"> 박스 구역3 </div>
+    <div class="구역4"> 박스 구역4 </div>
+    <div class="구역5"> 박스 구역5 </div>
+    <div class="구역6"> 박스 구역6 </div>
+
+
+
+    <ol>
+        <li> 목록1 </li>
+    </ol>
+
+    <table>
+        <tr>
+            <th>제목1</th>
+        </tr>
+    </table>
+    
+    <form>
+        <input />
+    </form>
+
+    <!--
+     div(division ) vs span : 구역 /레이아웃
+     -모든 마크업들은 기본CSS가 적용된 상태
+     -div 와 span 두 마크업은 CSS기본값이 거의 없는 마크업
+
+     1. div
+        display : block
+        한줄을 차지된 배치
+        대표마크업 : div, h, p, ul, ol
+
+     2. span
+        display : inline
+        한줄에 포함된 배치
+        대표마크업 : span , a, img
+        사이즈 적용 불가능.
+
+        display : inline-block 사용 inputbox
+        한줄에 포함된 배치 / 사이즈 적용 가능 
+
+        display : none 사용
+        숨김/표시안함
+    -->
+
+    <div> div 1 </div>
+    <div> div 2 </div>
+    <span> span 1 </span>
+    <span> span 2 </span>
+
+    <div> 글자1 <span class="s1">s1 inline</span> 글자2 </div>
+    <div> 글자1 <span class="s2">s2 inline</span> 글자2 </div>
+    <div> 글자1 <span class="s3">s3 inline</span> 글자2 </div>
+    <div> 글자1 <span class="s4">s4 inline</span> 글자2 </div>
+
+    <div> 글자1 <div class="s1">s1 inline</div> 글자2 </div>
+    <div> 글자1 <div class="s2">s2 inline</div> 글자2 </div>
+    <div> 글자1 <div class="s3">s3 inline</div> 글자2 </div>
+    <div> 글자1 <div class="s4">s4 inline</div> 글자2 </div>
+
+</body>
+</html>

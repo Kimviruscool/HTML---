@@ -1,0 +1,29 @@
+.book{
+ width: 300px; height: 400px;
+}
+
+.titlenum{
+ color: orange;
+ font-size: 30px;
+ display: inline; /* 생략 가능 */
+}
+
+/*내용 구역*/
+.content{
+ background-color: steelblue;
+ width: 500px;
+ padding: 30px 20px; /*안쪽 여백*/
+ color: white;
+ .point{
+    color: orange;
+ }
+}
+
+/*글 머리 제거*/
+.content > li {
+ list-style-type: style type none ; /*글머리 타입*/
+}
+/*특정구역색상만 변경*/
+.point{
+ color: orange;
+}

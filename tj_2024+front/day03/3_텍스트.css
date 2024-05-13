@@ -1,0 +1,43 @@
+/* 
+css주석 
+어디에{무엇을:어떻게; 무엇을:어떻게;}
+
+px : 고정형 사이즈(크기)
+*/
+
+.title{
+font-family: "궁서" ; /*글꼴 : 사용자pc에 설치된 글꼴*/
+font-size: 30px; /*크기*/ 
+font-style: italic; /* 기울기 */
+font-weight: bold; /*진하게*/
+}
+
+/* ================ 웹폰트 눈누 ===========*/
+@font-face {
+    font-family: 'TTLaundryGothicB';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2403-2@1.0/TTLaundryGothicB.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+.content{
+font-family: TTLaundryGothicB  ; /* 웹폰트 설치 x 서버제공*/
+color: gold; /*폰트 색상*/
+word-spacing: 10px; /*단어 간격 : 어간 */
+letter-spacing: 2px; /*글자 간격 : 자간 */
+line-height: 160%; /*줄 간격*/
+}
+
+#writer{
+ text-align:center;/*텍스트/컨텐츠/내용물 가로 정렬 : left,right,center*/
+ /*텍스트 선긋기*/ /*아래 위 중앙 */
+ text-decoration: underline overline line-through;
+ /*텍스트 그림자 : x축 y축 흐림정도 색상 */
+ text-shadow: 0px 0px 10px red;
+ /*색상 : 1 색상이름 2. 핵사코드[16진수] 3.RGB값 */
+ color: blue;
+ color: #000ff0;
+ color: rgb(0,0,255);
+ 
+}
