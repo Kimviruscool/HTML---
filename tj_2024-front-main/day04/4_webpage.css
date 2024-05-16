@@ -1,0 +1,92 @@
+*{ margin: 0px; padding: 0px;
+list-style-type: none;}
+
+/*a href 밑줄 색변경*/
+a{text-decoration: none;
+color: black;}
+
+/*구역 사이즈 : 테두리 기준*/
+*{box-sizing: border-box;}
+
+/*확인용*/
+/* *{border: 1px solid red;} */
+/*===================헤드========================*/
+/* 1.헤더 */
+#header{
+    width: 1280px;
+    margin: 30px auto;
+    display: flex; /*하위요소들의 배치방법*/
+    justify-content: space-between; /*양쪽끝의 배치*/
+    align-items: center; /*세로 정렬 가운데*/
+    /*레이아웃용도
+    background-color: beige; height: 100px; */
+}
+
+#topmenu{
+    display: flex;
+    justify-content: flex-end; /*flex요소 오른쪽 정렬*/
+    margin: 10px 0px;
+    font-size: 10px;
+}
+
+#topmenu > li{ margin-left: 10px;}
+
+#mainmenu{
+    display: flex;
+    margin: 20px 0px; /*바깥여백*/
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#mainmenu > li{ margin-left: 70px;} 
+
+/*===================메인=========================*/
+/*2. 본문*/
+
+#mainimg{ width: 100%;} /*사진사이즈*/
+
+#content{
+    width: 1280px; margin: 30px auto;
+    display: flex; justify-content: space-between;
+}
+
+#aside { width: 250px; }
+#aside > h3 {
+    background-color: gray; color: white;
+    font-size: 20px;
+    padding: 10px;
+}
+
+#aside > ul > li{
+    border-bottom: 2px solid #eeeeee;
+    padding: 10px;
+}
+
+#maincont { width: 1000px; }
+
+#maincont >h3 {
+    border-bottom: 2px solid #eeeeee;
+    padding-bottom: 2px; margin-bottom:2px ;
+    font-size: 20px;
+}
+
+#maincont > img {
+    display: block;
+    margin: 0px auto;
+    /*display : inline이면 mrgin:0 auto가 적용불가능*/
+}
+
+/*======================푸터======================*/
+/*3. 푸터*/
+#footer{
+    background-color: #2c2a29;
+}
+
+#footercont{
+    width: 1280px; margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    padding: 10px 0px;
+}
+

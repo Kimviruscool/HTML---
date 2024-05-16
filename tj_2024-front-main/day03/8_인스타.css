@@ -1,0 +1,72 @@
+div{
+text-align: center;
+border: 1px solid gray;
+width: 400px;
+height: 400px;
+margin: 20px;
+}
+
+*{
+ padding: 0px;
+ margin: 0px;
+}
+
+.insicon > img{
+    width: 200px ;
+    margin-top: 20px;
+}
+
+.id{ width: 300px; height: 43px;
+ font-weight: bold;
+ border-radius: 4px;
+ border-style: solid;
+ border-width: 1px;
+}
+
+.passw{ width: 300px; height: 43px;
+ margin: 10px;
+ font-weight: bold;
+ border-radius: 4px;
+ border-style: solid;
+ border-width: 1px;
+}
+
+.logg{
+    width: 300px; height: 40px;
+    background-color: rgb(55, 196, 252);
+    border-radius: 10px;
+    border:none;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    margin: 10px;
+}
+
+.facicon{
+ margin: 20px;
+ font-weight: bold;
+}
+
+.facicon > img{
+    width: 16px;
+}
+
+.lost{
+ margin: 10px;
+ font-size: 12px;
+}
+
+.noblock{
+    border: 1px solid gray;
+    width: 320px;
+    height: 20px;
+    padding: 40px;
+}
+
+.sign{
+ font-weight: bold;
+ color:rgb(55, 196, 252) ;
+}
+
+a {text-decoration: none; }
+li {list-style: none;}

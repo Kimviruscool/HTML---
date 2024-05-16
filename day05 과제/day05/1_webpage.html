@@ -1,0 +1,196 @@
+<!DOCTYPE html>                     <!-- HTML5 버전 알림-->
+<html>                              <!-- HTML 시작 마크업 -->
+  <head>                            <!-- HTML 페이지내 설정/옵션 마크업-->
+    <meta charset='utf-8'>          <!-- HTML 파일내 문자 인코딩/번역 -->
+    <title>Page Title</title>       <!-- HTML 페이지의 제목 -->
+    <meta name='viewport' content='width=device-width, initial-scale=1'>    <!-- 반응형(디바이스=모니터크기에 따라 배율고정)-->
+    <link rel='stylesheet' type='text/css' media='screen' href='1_webpage.css'>  <!-- CSS 파일 호출 -->
+    <script src='main.js'></script> <!-- JS 파일 호출 -->
+  </head>
+  <body>                          <!-- HTML 본문 시작 -->
+    
+    <!-- 
+      <마크업 />
+      <마크업 > 컨텐츠 </마크업>
+    -->
+
+    <div id="wrap">         <!-- <div> : 주로 레이아웃/구역 만들때 사용되는 마크업 display:block-->
+       
+      <div id="header">  <!-- css선택자 : id(페이지당 단일용) vs class(페이자당 복수용)-->
+        
+        <div id="headerLeft"> 
+          <img src="logo.png"/>  
+        </div>
+        
+        <div id="headerRight"> 
+          <ul id="topMenu">
+            <li> 김지영(jyKim)님 | </li>
+            <li> 로그아웃 | </li>
+            <li> 정보수정 </li>
+          </ul>
+          <ul id="mainMenu" >
+            <li> <a href="#">HOME</a> </li>
+            <li> <a href="#">출석부</a> </li>
+            <li> <a href="#">작품갤러리</a> </li>
+            <li> <a href="#">게시판</a> </li>
+          </ul>
+        </div>
+
+      </div> <!-- 헤더 div end -->
+      
+      <!-- <img id="mainImg" src="img/main_bg.png" /> -->
+      <div id="mainImg" ></div>       
+      
+      <div id="content">
+        <div id="sidebar">
+          <h3> The 베이킹 </h3>
+          <p>안녕하세요. 쿠키와 빵 만들기 정보를 공유하고 소통하는 공간입니다.</p>
+          <input class="searchInput" type="text"/>
+          <input class="searchBtn" type="button" value="검색" />
+ 
+          <h4>베이킹 요리</h4>
+          <ul>
+            <li> 쿠키 만들기 </li>
+            <li> 빵 만들기 </li>
+            <li> 마카롱 만들기 </li>
+          </ul>
+
+          <h4>최근 댓글</h4>
+          <ul>
+            <li> 쿠키 재미있어요. </li>
+            <li> 빵 좋아요 </li>
+            <li> 마카롱 만들기 추천 </li>
+          </ul>
+        </div>
+
+        <div id="mainContent">
+          <div id="leftContent">
+            
+            <!-- 상단 게시판 -->
+            <h3> 알림 </h3>
+            <ul class="board">
+              <li> <!-- 1줄/1행1개 게시물 -->
+                <div>쿠키 클래스 연기 합니다.</div>
+                <div>09.30</div>
+              </li>
+              <li> <!-- 1줄/1행1개 게시물 -->
+                <div>쿠키 클래스 연기 합니다.</div>
+                <div>09.29</div>
+              </li>
+              <li> <!-- 1줄/1행1개 게시물 -->
+                <div>쿠키 클래스 연기 합니다.</div>
+                <div>09.28</div>
+              </li>
+              <li> <!-- 1줄/1행1개 게시물 -->
+                <div>쿠키 클래스 연기 합니다.</div>
+                <div>09.27</div>
+              </li>
+              <li> <!-- 1줄/1행1개 게시물 -->
+                <div>쿠키 클래스 연기 합니다.</div>
+                <div>09.26</div>
+              </li>
+            </ul>
+
+            <!-- 하단 게시판 -->
+            <h3> 게시판  </h3>
+            <ul class="board">
+              <li> <!-- 1줄/1행1개 게시물 -->
+                <div>쿠키 클래스 연기 합니다.</div>
+                <div>09.30</div>
+              </li>
+              <li> <!-- 1줄/1행1개 게시물 -->
+                <div>쿠키 클래스 연기 합니다.</div>
+                <div>09.29</div>
+              </li>
+              <li> <!-- 1줄/1행1개 게시물 -->
+                <div>쿠키 클래스 연기 합니다.</div>
+                <div>09.28</div>
+              </li>
+              <li> <!-- 1줄/1행1개 게시물 -->
+                <div>쿠키 클래스 연기 합니다.</div>
+                <div>09.27</div>
+              </li>
+              <li> <!-- 1줄/1행1개 게시물 -->
+                <div>쿠키 클래스 연기 합니다.</div>
+                <div>09.26</div>
+              </li>
+            </ul>
+
+          </div>
+
+          <div id="rightContent">
+            <h3> 제빵 클래스 </h3>
+            <div id="productlist">    
+                <ul class="product">
+                    <li> <img src="bread1.png"></li>
+                    <li> 도너츠 만들기 [3] </li>
+                    <li> 23.06.13</li>
+                </ul>
+
+                <ul class="product">
+                    <li> <img src="bread2.png"></li>
+                    <li> 도너츠 만들기 [3] </li>
+                    <li> 23.06.13</li>
+                </ul>
+
+                <ul class="product">
+                    <li> <img src="bread3.png"></li>
+                    <li> 도너츠 만들기 [3] </li>
+                    <li> 23.06.13</li>
+                </ul>
+
+                <ul class="product">
+                    <li> <img src="bread4.png"></li>
+                    <li> 도너츠 만들기 [3] </li>
+                    <li> 23.06.13</li>
+                </ul>
+                
+            </div> <!-- 제품 목록 구역 end -->
+
+          </div> <!-- 오른쪽 본문 내용 end -->
+        </div>   <!-- 오른쪽 본문 end -->
+      </div> <!-- 본문 end -->
+
+    <div id="footer">  
+        <div id="footercon">
+            <ul id="ftTop">
+                    <li> The베이킹 소개</li>
+                    <li> 개인정보처리방침</li>
+                    <li> 저작권소개</li>
+                    <li>이용안내</li>
+
+            </ul>
+            
+        
+            <div id="ftBot">
+                
+                <ul>
+                    <li><h3>문의전화</h3></li>
+                    <li>123-1234</li>
+                    <li>10:00 ~ 18:00(Lunch 12:00 ~ 13:00)</li>
+                </ul>
+
+                <ul>
+                    <li><h3>The베이킹</h3></li>
+                    <li>주소 : 경기도 안산시 한대앞역 123-1234</li>
+                    <li>전화 : 031-123-1234</li>
+                    <li>팩스 : 031-123-1234</li>
+                    <li>이메일 : qweqwe@qweqwe.com</li>
+                </ul>
+
+                <ul>
+                    <li><h3>입금정보</h3></li>
+                    <li>농협 123-123-123456</li>
+                    <li>The베이킹</li>
+                </ul>
+
+            </div>
+              
+        </div>
+    </div>
+     
+
+    </div>
+
+  </body>                         <!-- HTML 본문 END -->
+</html>                           <!-- HTML 시작 마크업 END  -->

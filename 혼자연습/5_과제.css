@@ -1,0 +1,136 @@
+* {
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+    list-style-type: none;
+    font-family: 'Malgun Gothic';
+}
+
+a{text-decoration: none;
+    color: black;}
+
+    #header{
+        width : 1280px;
+        margin: 30px auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    #toplogo > img{ 
+        display:block;
+        width: 500px;
+    }
+    
+    #topmenu{
+        display: flex;
+        justify-content: flex-end;
+        margin: 15px 0px;
+        font-size: 10px;
+    }
+    
+    #topmenu > li{ margin-left: 12px;}
+    #button { padding: 10px 20px;
+        margin-bottom: 5px;
+    }
+
+    #bottommenu{
+        display: flex;
+        margin: 15px 0px;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    
+    #bottommenu > li{ margin-left : 60px;}
+
+
+
+    #main, #maindown{
+        width: 1280px;
+        margin: 30px auto;
+        display: flex;
+        justify-content: space-between;
+    }
+    #main{
+        margin-bottom: 10px;
+    }
+    #subImage1, #subImage2, 
+    #subImage3, #subImage4{
+        width: 300px;
+        display: flex;
+        margin: 10px 10px auto;
+        align-items: center;
+    }
+    #mainImg{
+        width: 800px;
+        display: block;
+        margin: 0 auto;
+    }
+    #sidemenu{
+        width: 250px;
+    }
+    #sidemenu >ul > h3{
+        background-color: #0c509e;
+        font-size: 20px;
+        padding: 15px;
+    }
+    #sidemenu > ul > li{
+        border-bottom: 2px solid #eeeeee;
+        padding: 10px;
+    }
+    #mainTxt{
+        width: 1000px;
+    }
+    #mainTxt > p , #maindown > p{
+        width: 800px;
+        margin: 0 auto;
+        border-bottom: 2px solid #eeeeee;
+        padding: 10px;
+    }
+    #maindown{
+        align-items: flex-end;
+    }
+    #mainSub{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+    #mainsub{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+    #subImage4{
+        height: 200px;
+    }
+
+
+
+
+.boldltr {
+    font-weight: bold;
+}
+#footerbg {
+    background-color: #0c509e;
+    color: white;
+    padding: 10px 0;
+}
+
+#footer {
+    margin: 30px auto;
+    width: 1280px;
+
+}
+#bottomLogo {
+    width: 80px; height: 110px;
+}
+
+#bottomLogo_2 {
+    height: 40px;
+    display: inline-block;
+    margin: 0 0 10px 10px;
+}
+
+#siteInfo > ul > li {
+    margin: 10px 0;
+}
