@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <!--
+        문자 "" '' ``
+        숫자 1~9
+        논리 treu false
+        배열 [data, data, data]
+
+        출력함수
+        1.console.log() (검사할때필요 중요)
+        2.alert()
+        3.document.write(data)
+        4.document.마크업.innerHTML(문자데이터)
+        document.querySelector('#id').innerHTML = data
+        document.querySelector('.calss').innerHTML = data
+
+        입력함수
+        1.confirm(data) True/False
+        2.prompt(data) input / True / False
+        document.queryselector(#id).innerHTML = data
+        document.queryselector('.class').innerHTML = data
+
+        변수 와 상수
+        1. 선언하는 방법
+        변수 : let 변수명 = data
+        상수 : const 변수명 = data
+        2. 호출하는 방법
+        변수명
+        3. 수정하는 방법
+        변수명 = newdata
+        4. 연산
+        변수A = 변수B + 변수C
+        5. 배열 : 순서대로 번호가 붙은 데이터들이 연속적인 형태로 구성된 구조의 데이터
+        인덱스 : 0번 시작 N-1   까지
+        1. 배열 선언
+        let 변수명 = [data, data, data]
+        2. 배열 호출
+        전체호출 : 변수명
+        특정인덱스 데이터 호출 : 변수명[인덱스번호]
+        3. 배열 수정
+        let 변수명 = newarray[]
+        특정인덱스 데이터 수정 변수명[인덱스] = newdata
+        -- 배열과 관련된 라이브러리/함수
+        1. push
+        변수명.push()
+        2. splice
+        변수명.splice(시작인덱스, 삭제개수)
+        변수명.splice(시작인덱스, 삭제개수, newdata)
+        3. indexOf
+        변수명.indexOf(serachdata)
+        4. length
+        변수명.length
+
+    -->
+
+    <script>
+        // let 입력1=prompt('입력1 : ');
+        // let 입력2=prompt('입력2 : ');
+        // document.write(입력1);
+        // document.write('<br/>');
+        // document.write(입력2);
+
+        let 국어=prompt('국어점수 : ')  //배열값 입력
+        let 영어=prompt('영어점수 : ')  //배열값 입력
+        let 수학=prompt('수학점수 : ')  //배열값 입력
+        let 점수배열변수 = [];          //배열선언
+       점수배열변수.push(국어); //배열 값저장
+       점수배열변수.push(영어); //배열 값저장
+       점수배열변수.push(수학); //배열 값저장
+        console.log(점수배열변수);
+
+        document.write('<ol>');
+            document.write('<li>'+국어+'</li>');
+            document.write(`<li>${영어}</li>`);
+            document.write('<li>수학</li>');
+        document.write('</ol>');
+    </script>
+</body>
+</html>

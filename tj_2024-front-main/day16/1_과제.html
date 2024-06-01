@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <link rel='stylesheet' type='text/css' media='screen' href='1_과제.css'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+   
+</head>
+
+<style>
+   
+    #box > div {
+      
+      width: 200px; height: 50px;
+      font-size: 15px;
+      display: flex;
+      justify-content: center; align-items: center;    
+      
+    }
+    #box > .whiteBox{
+      background-color: white;
+    }
+    #box > .blackBox{
+      background-color: black;
+      color: white;
+      text-decoration: line-through;
+    }
+
+
+</style>
+
+<body>
+    <h3> my todo list </h3>
+    
+    <div id="input">
+        <input id="listInput" type="text"/><button onclick="add()">등록</button>
+
+    </div> 
+
+    <div id="box"> </div>
+
+    
+
+    <script src='1_과제.js'></script>
+</body>
+</html>

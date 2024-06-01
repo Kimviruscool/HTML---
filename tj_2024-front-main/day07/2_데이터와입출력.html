@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+</head>
+<body>
+    <!--
+        HTML에서 JS을 적용하는방법
+        1. <body> 마크업에 <script> js문법 </script>
+        2. <head>마크업에 <scrpit src="스크립트이름.js"></script>
+
+        데이터(자료)란?
+        -관찰,수집 등을 통한 사실 모아 놓은 것
+        -컴퓨터 데이터 : 컴퓨터가 처리할 수 있는 문자,숫자,소리,그림 등 형태의 자료
+        
+        -JS의 데이터
+        1. 문자 "" 또는 '' 또는 ``(백택 ~) 예시:"안녕하세요"
+        2. 숫자 그외 예시:24
+        3. 논리/불리언 ture , false
+
+        JS주석
+        HTML <!-> , css /**/ , js 한줄 //  여러줄 /**/
+
+        js 입출력
+        •출력
+        1. console.log(data)   : 개발자도구 console / 오류 위치찾을때 사용
+        2. alert(data) : 브라우저에 알림 메시지 창
+        3. document.write(data) : 현재 HTML에 출력
+        4. document.마크업명.innerHTML = data : 특정 HTML마크업에 출력
+        •입력
+        1.confirm("메세지") : 브라우저에 알림 메세지 창 (확인=true,취소=false)
+        2.prompt("메세지") : 브라우저에 알림 메세지 창 (input 입력값, 확인,취소)
+        3.document.querySelector(선택자).innerHTML : 특정 HTML마크업에 작성된 CONTENT 가져오기
+    -->
+    <!--js시작-->
+    <script>
+        //console.log('안녕하세요. JS입니다.')
+
+        //1. 데이터
+        //문자
+        '안녕하세요.'
+        //숫자
+        10
+        //논리
+        true
+
+        //2. 출력 : 출력장치/위치 종류
+            //1. console.log()   : 개발자도구 console / 오류 위치찾을때 사용
+        console.log("안녕하세요");
+        console.log(10);
+        console.log(false);
+            //2. alert(알럿) : 브라우저에 알림 메시지 창
+        alert("안녕하세요");
+        alert(20);
+        alert(true);
+            //3. document.write() : 현재 HTML에 출력
+        document.write("안녕하세요3");//HTML 명령어 사용가능
+        document.write(10+10);
+        document.write(true);
+            //4. document.마크업명.innerHTML
+        document.body.innerHTML = "안녕하세요 4"
+
+
+        //3. 입력 : 입력장치
+        // • 주로 HTML에서 입력하기 때문에 사용빈도 적음
+        //1.confirm() : 브라우저에 알림 메세지 창 (확인=true,취소=false)
+        confirm("안녕하세요5");
+        //2.prompt() : 브라우저에 알림 메세지 창 (input, 확인,취소)
+        prompt("안녕하세요6")
+        // --빈도 높은 함수/기능 
+        document.querySelector('body').innerHTML
+    </script>
+     <!--js끝-->
+
+</body>
+</html>

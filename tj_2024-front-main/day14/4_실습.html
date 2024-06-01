@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+      #parking{width: 500px; margin: 0 auto;
+      display: flex ;flex-wrap: wrap;}
+      #parking div{width: 48px;height: 40px; border: 1px solid black;margin-bottom: 20px;}
+      #carin{background-color: green;}
+      #carout{background-color: red;}
+    </style>
+    
+</head>
+<body>
+    <div id="parking">
+      
+      
+
+
+    </div>
+    <input id="carnum" type="text" placeholder="차량번호"><button id="money"  onclick="_out()">출차</button>
+    <script src='4_실습.js'></script>
+    
+</body>
+</html>
+<!--
+
+    기계식 주차장 시스템 웹 구현하기
+    요구사항
+        > 주차할 수 있는 총 차량 대수 20대
+        > 입차 시 차량번호 입력하고 주차할 위치를 클릭해서 입차 등록
+            - 해당 위치에 입차된 사람이 없을 경우에만, 있다면 입차 불가
+        > 출차 시 차량번호를 입력 받고 해당 차량 위치와 금액 안내 출력
+            - 차량 위치는 입차시 선택한 위치, 금액은 1분당 100원 계산
+
+    ======================================================================
+
+    1. 요구 사항 분석해서 설계
+    [백엔드]
+        1) 메모리 구조
+        2) 기능 구성
+        3) 기능 구현 로직 순서
+
+    [프론트엔드]
+        1) 레이아웃 구성해서 스케치, 프로토타입
+        2) HTML 샘플 작성
+    2. 구현
+        > * JS 샘플 데이터 등록
+        > * HTML 샘플 구현
+        각자 구현
+    3. 연동
+    4. 테스트
+    5. 유지보수 
+
+
+-->

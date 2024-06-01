@@ -1,0 +1,20 @@
+/*CSS초기화*/
+*{padding: 0px; box-sizing: border-box;}
+li{list-style: none;}
+a{text-decoration: none; color: black;}
+
+#caltop{display: flex;}
+
+#calendar{display: flex;
+flex-wrap: wrap;}
+#calendar > div{
+    width: 14%;
+    height: 100px;
+    border: 1px solid black;
+}
+
+#calTop{display: flex; justify-content: center;}
+
+#red{background-color: rgb(255, 94, 94);}
+#blue{background-color: rgb(103, 103, 255);}
+

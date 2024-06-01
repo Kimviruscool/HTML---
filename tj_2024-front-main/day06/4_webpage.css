@@ -1,0 +1,156 @@
+/*=========================공통 CSS ============*/
+*{padding: 0px; margin: 0px;
+font-size: 12px; box-sizing: border-box;}
+li{list-style-type: none;}
+a{color: black; text-decoration: none;}
+/*=========================공통 CSS ============*/
+/*=========================LAYOUT ============*/
+#header{width: 100%;}
+#content{width: 1600px; margin: 0 auto;}
+#footer{width: 100%;}
+/*=============작업용 CSS==================*/
+/* *{border: 1px solid red;}
+#header{height: 200px;}
+#content{height: 100px;}
+#footer{height: 200px;} */
+/*=================헤더 위=================*/
+#topmenu{
+display: flex; justify-content: flex-end;
+border-bottom: 1px solid #dbdbdb;
+padding: 10px;
+}
+
+#topmenu > li > span{padding: 0px 15px;}
+#topmenu > li img {width: 20px; margin: 2px 10px 0px 0px;}
+/*===============헤더 아래================*/
+
+#mainmenu{
+    display: flex; justify-content: space-between;
+    align-items: center; padding: 0px 40px;}
+
+#mainmenu > ul{ display: flex; width: 80%;}
+
+#mainmenu > ul > li{ height: 80px; 
+display: flex; align-items: center;
+justify-content: center; width: 80px;}
+
+#mainmenu .logo {width: 155px;}
+#mainmenu .new {color: red;}
+
+/*=================검색박스=============*/
+#search{border-bottom: 1px solid black;}
+#search > input {border: none; padding : 5px; width: 130px;}
+#search > img {width: 15px;}
+/*커서(포커스) 활성화 되었을때 테두리/outline 제거*/
+*:focus{outline: none;}
+/*==========드롭 다운===========================*/
+#mainmenu > ul > li{position: relative;}
+#mainmenu .submenu{position: absolute;
+top: 80px; background-color: white;
+width: 130%; text-align: center;
+display: none;} /*숨기기*/
+
+#mainmenu .submenu > li{margin:8px; font-weight: bold;}
+
+#mainmenu > ul > li:hover .submenu{display: block;}
+/*li 에서 hover 했을때 .submenu를 display:block형식으로 펼친다*/
+/*==========스티키============================*/
+#mainmenu{position: sticky;
+top: 0px; background-color: white; 
+opacity: 80%; /*투명도 100%=불투명 0%=투명 */}
+
+/*sticky 사용조건 
+1. 상위 부모의 높이 사이즈 안에서 고정
+fixed:특정 요소와 상관없이 디바이스 고정
+2. top .right . left . bottom 위치속성 1개이상 필수사용
+3. 부모요소가 overflow 속성 사용금지.*/
+
+/*==========메인 이미지============================*/
+#mainimg{width: 100%}
+/*==========메인============================*/
+
+#content > .title{
+    font-size: 17px;text-align:center ; font-weight: bold;
+    margin-top: 50px;
+}
+
+#content > .commet{
+    font-size: 10ox; text-align: center;
+    color:gray; margin:20px 0px;
+}
+
+/*item(1600) 한줄에 4개씩 이므로 나누기4하고 여백 조금빼기*/
+#items >.item{ width: 380px ; margin: 30px 0px;}
+#items > .item > .itemimg{width: 100%;}
+#items .color > span{
+    /*span마크업 display : inline */
+    width: 10px; height: 10px;
+    display: inline-block; /*한줄 배치 하면서 사이즈 적용 가능*/
+    border: 1px solid #dbdbdb;
+}
+
+#items .colorreview{display: flex;
+justify-content: space-between; margin: 10px 0px;}
+
+#items .review{color: #9999;} /*리뷰색*/
+
+#items .itemname{margin: 5px 0px;}
+
+#items .itemname > .size{
+    font-size: 10px; color: #9999; margin: 1px 0px;}
+
+#items .itemprice{position: relative; margin: 5px 0px;} /*가격 오른쪽붙히기*/
+#items .disc{position: absolute; right: 0px; top: 0px;
+font-size: 15px; color: red; font-weight: bold;}
+
+#items .price{text-decoration:line-through;
+color: #9999;}
+
+#items{display: flex; flex-wrap: wrap;
+justify-content: space-between;}
+
+/*============== 우측 팝업 ===========================*/
+
+#popup{position: fixed; right: 0px; top: 300px;}
+
+#popup img{width: 20px;}
+
+#popup > ul > li{
+    padding: 8px;
+    border: 1px solid #dbdbdb;
+    background-color: #f7f7f7;
+    position: relative; /*부모 기준점 잡아주기*/
+}
+
+/*팝업 호버 손대면 최근본상품 submenu*/
+#popup > ul > li > span{
+    position: absolute;
+    top: 10px; right: 40px;
+    display: none;
+
+    width: 80px; height: 20px;
+    background-color: black;
+    color: white;
+    border-radius: 5px; text-align: center; /*둥근모서리 가운데*/
+}
+
+#popup > ul > li:hover .popupsub{display: inline;}
+/*==========FOOTER ============================*/
+#footerbottom{
+    text-align: center;
+    font-size: 10px; color: #999999;
+    margin: 30px 0px; line-height: 160%;
+}
+
+#footertop{background-color: #f7f7f7;
+}
+
+#footercontent{
+    width: 1400px; margin: 0 auto;
+    display: flex; justify-content: space-between;
+    padding: 50px 100px;
+}
+
+#footercontent h3{margin: 10px 0px; font-size: 16px; font-weight: bold;}
+#footercontent h4{margin: 10px 0px; font-size: 16px; font-weight: bold;}
+#footercontent ul > li{margin-bottom: 10px;}

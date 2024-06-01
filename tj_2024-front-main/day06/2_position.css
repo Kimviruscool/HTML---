@@ -1,0 +1,37 @@
+#popup{background-color: beige;
+width: 200px; height: 200px;
+border-radius: 10px;
+position: fixed; /*디바이스 위치고정*/
+bottom: 50px; right: 10px;
+z-index: 2;
+}
+/*===================================================*/
+#header{
+    display: flex;
+    border-bottom: 2px solid gray;
+    position: sticky;
+    /*해당 구역이 가려질때 위치고정*/
+    top: 0px; /*상단고정*/ /*위치잡는곳?*/
+    z-index: 3; /*다른 요소와 겹칠때 배치 우선순위*/
+    background-color: white;
+}
+#header > ul{display: flex;}
+/*===================================================*/
+#parent{
+    width: 500px; height: 500px; margin: 0 auto;
+    background-color: skyblue;
+    position: relative; /*하위 요소들의 absolute 기준점*/
+}
+
+#parent >div{
+    width: 100px; height: 100px;
+    background-color: yellow;
+    position: absolute; /*절대위치*/
+}
+
+#box1{top: 25px; left: 200px;}
+#box2{top: 125px; left: 75px;}
+#box3{top: 125px; right: 75px;}
+#box4{top: 250px; left: 75px;}
+#box5{top: 250px; right: 75px;}
+#box6{bottom: 25px; left: 200px;}
