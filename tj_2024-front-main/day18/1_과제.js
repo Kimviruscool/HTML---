@@ -189,3 +189,4 @@ function 인사출력(){                                        console.log('인
     }        
     인사출력.innerHTML = html;
 }
+{}
