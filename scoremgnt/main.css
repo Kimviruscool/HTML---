@@ -1,0 +1,14 @@
+li{list-style: none;}
+a{text-decoration: none;}
+
+#footer{background-color: #1675F2;}
+
+#footer1{display: flex; justify-content: center;}
+#footer1 > ul{display: flex; }
+
+#footer2{display: flex; justify-content: center;}
+#footer3{display: flex; justify-content: center;}
+
+body{background-color: #deecf8;}
+
+#footer1ul > li {margin: 5px 10px 0px 10px;}
